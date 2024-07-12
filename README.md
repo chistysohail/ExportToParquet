@@ -52,3 +52,5 @@ dotnet run
 After running the application, you should see a message "Data export complete."
 A file named export.parquet should be created in the current directory containing the data from the YourEntities table that is older than three months from the current date.
 
+check the output screanshot (in vs-code using available free extensions) :
+https://github.com/chistysohail/ExportToParquet/blob/master/output_export_parquet_file.JPG
