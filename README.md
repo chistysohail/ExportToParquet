@@ -3,10 +3,10 @@
 This is a .NET 6 console application that reads data from an MS SQL table and exports records older than three months to a Parquet file in a local folder.
 Parquet offers efficient data compression and encoding, improving performance and reducing storage requirements compared to CSV and JSON, especially for large datasets.
 
-Format	  Approx. Compressed Size	Approx.   Total Processing Time	Time Ratio (CSV = 1.0)
-CSV	      8TB	High (slowest)	              1.0
-JSON	    6-7TB	Medium	                    ~0.7
-Parquet	  1-2TB	Low (fastest)	              ~0.3
+For example an 8TB dataset:
+CSV: Remains approximately 8TB with high processing time (slowest), having a time ratio of 1.0.
+JSON: Compresses to around 6-7TB with medium processing time, having a time ratio of approximately 0.7.
+Parquet: Compresses significantly to about 1-2TB with low processing time (fastest), having a time ratio of approximately 0.3.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
