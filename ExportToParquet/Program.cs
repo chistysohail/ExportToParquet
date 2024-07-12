@@ -29,13 +29,13 @@ namespace ExportDataToParquet
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), "export.parquet");
 
-            var dateTimeField = new DataField<DateTime>("YourDateColumn");
+            var dateTimeField = new DataField<DateTimeOffset>("YourDateColumn");
             var otherField = new DataField<string>("OtherColumn");
 
             var schema = new Schema(dateTimeField, otherField);
             var columns = new List<DataColumn>
             {
-                new DataColumn(dateTimeField, data.Select(e => e.YourDateColumn).ToArray()),
+                new DataColumn(dateTimeField, data.Select(e => new DateTimeOffset(e.YourDateColumn)).ToArray()),
                 new DataColumn(otherField, data.Select(e => e.OtherColumn).ToArray())
             };
 
@@ -61,7 +61,7 @@ namespace ExportDataToParquet
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=your_server_name;Database=your_database_name;User Id=your_username;Password=your_password;");
+            optionsBuilder.UseSqlServer("Server=(LocalDB)\\MSSQLLocalDB;Database=Test;Trusted_Connection=True;MultipleActiveResultSets=true;");
         }
     }
 
