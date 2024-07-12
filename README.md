@@ -44,11 +44,8 @@ optionsBuilder.UseSqlServer("Server=your_server_name;Database=your_database_name
 
 
 Build and Run
-Save the Program.cs file and the ExportDataToParquet.csproj file in the same directory.
-
 Open a terminal or command prompt and navigate to the directory containing these files.
-
-Build the project using the following command:
+Build and Run the project using the following command:
 dotnet build
 dotnet run
 
