@@ -1,6 +1,12 @@
 # ExportDataToParquet
 
 This is a .NET 6 console application that reads data from an MS SQL table and exports records older than three months to a Parquet file in a local folder.
+Parquet offers efficient data compression and encoding, improving performance and reducing storage requirements compared to CSV and JSON, especially for large datasets.
+
+Format	  Approx. Compressed Size	Approx.   Total Processing Time	Time Ratio (CSV = 1.0)
+CSV	      8TB	High (slowest)	              1.0
+JSON	    6-7TB	Medium	                    ~0.7
+Parquet	  1-2TB	Low (fastest)	              ~0.3
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
