@@ -1,4 +1,8 @@
-# ExportDataToParquet
+# ParquetDataTransfer
+
+This solution contains two .NET 6 console applications:
+1. `ExportDataToParquet` - Reads data from an MS SQL table and exports records older than three months to a Parquet file.
+2. `ImportDataFromParquet` - Reads data from a Parquet file and inserts it into an MS SQL table.
 
 This is a .NET 6 console application that reads data from an MS SQL table and exports records older than three months to a Parquet file in a local folder.
 Parquet offers efficient data compression and encoding, improving performance and reducing storage requirements compared to CSV and JSON, especially for large datasets.
