@@ -27,7 +27,7 @@ namespace ExportDataToParquet
 
         static void ExportToParquet(List<YourEntity> data)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "export.parquet");
+            var path = Path.Combine(AppContext.BaseDirectory, "../../../../export.parquet");
 
             var dateTimeField = new DataField<DateTimeOffset>("YourDateColumn");
             var otherField = new DataField<string>("OtherColumn");

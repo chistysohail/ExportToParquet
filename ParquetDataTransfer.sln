@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportToParquet", "ExportToParquet\ExportToParquet.csproj", "{515FF53B-ABEA-4C62-8580-555E3D8C7C23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportDataFromParquet", "ImportDataFromParquet\ImportDataFromParquet.csproj", "{49CB24A0-B131-4E00-8221-3AAA244C2636}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{515FF53B-ABEA-4C62-8580-555E3D8C7C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515FF53B-ABEA-4C62-8580-555E3D8C7C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515FF53B-ABEA-4C62-8580-555E3D8C7C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49CB24A0-B131-4E00-8221-3AAA244C2636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CB24A0-B131-4E00-8221-3AAA244C2636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CB24A0-B131-4E00-8221-3AAA244C2636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CB24A0-B131-4E00-8221-3AAA244C2636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
