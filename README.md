@@ -1,6 +1,12 @@
 # ExportDataToParquet
 
 This is a .NET 6 console application that reads data from an MS SQL table and exports records older than three months to a Parquet file in a local folder.
+Parquet offers efficient data compression and encoding, improving performance and reducing storage requirements compared to CSV and JSON, especially for large datasets.
+
+For example an 8TB dataset:
+CSV: Remains approximately 8TB with high processing time (slowest), having a time ratio of 1.0.
+JSON: Compresses to around 6-7TB with medium processing time, having a time ratio of approximately 0.7.
+Parquet: Compresses significantly to about 1-2TB with low processing time (fastest), having a time ratio of approximately 0.3.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -51,3 +57,6 @@ dotnet run
 
 After running the application, you should see a message "Data export complete."
 A file named export.parquet should be created in the current directory containing the data from the YourEntities table that is older than three months from the current date.
+
+check the output file screanshot (in vs-code using available free extensions) :
+https://github.com/chistysohail/ExportToParquet/blob/master/output_export_parquet_file.JPG
